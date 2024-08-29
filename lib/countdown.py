@@ -1,1 +1,15 @@
-# your code goes here!
+# lib/countdown.py
+
+import time
+
+def countdown(n):
+    for i in range(n, 0, -1):
+        print(f"{i} SECOND(S)!")
+    print("HAPPY NEW YEAR!")
+
+def countdown_with_sleep(n):
+    for i in range(n, 0, -1):
+        print(f"{i} SECOND(S)!")
+        time.sleep(1)  # Sleep for 1 second
+    print("HAPPY NEW YEAR!")
+
